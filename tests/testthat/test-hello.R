@@ -7,3 +7,8 @@ test_that("warning works", {
 # test_that("error works", {
 #   stop("hi")
 # })
+test_that("expect warning works", {
+  expect_warning(
+    warning("hi")
+  )
+})
