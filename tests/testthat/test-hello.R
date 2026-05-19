@@ -2,7 +2,7 @@ test_that("message works", {
   message("hi")
 })
 test_that("warning works", {
-  warning("hi")
+  expect_silent(warning("hi"))
 })
 # test_that("error works", {
 #   stop("hi")
